@@ -15,6 +15,7 @@ Flat.destroy_all
   address: '10 Clifton Gardens London W9 1DT',
   description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
   price_per_night: 75,
-  number_of_guests: 3
+  number_of_guests: 3,
+  image_url: 'https://images.unsplash.com/photo-1563298723-1e3d2a89c4e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmxhdCUyMGZsb3dlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
 )
 end
