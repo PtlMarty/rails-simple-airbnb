@@ -1,0 +1,22 @@
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <% @flats.each do |flat| %>
+      <div class="col-md-3">
+        <div class="card m-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title"><%= flat.name %></h5>
+            <p class="card-text"><%= flat.description %></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><%= flat.address %></li>
+            <li class="list-group-item">Price per night: <strong><%= flat.price_per_night %></strong></li>
+            <li class="list-group-item">Number of guests: <%= flat.number_of_guests %></li>
+          </ul>
+          <div class="card-body">
+            <%= link_to 'Show', flat_path(flat), class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
